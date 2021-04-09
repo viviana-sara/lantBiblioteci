@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUIAdministrator">
+    <children>
+        <Label layoutX="29.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="159.0" text="Alege biblioteca">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Alege filtru">
+            <font>
+                <Font name="System Bold" size="23.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="alegeBiblioteca" layoutX="232.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="189.0" />
+        <ComboBox fx:id="alegeFiltru" layoutX="233.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="189.0" />
+        <Label layoutX="37.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Alege tilu">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <TextField fx:id="titluAles" layoutX="234.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="189.0" />
+        <Button fx:id="veziBiblioteca" layoutX="469.0" layoutY="41.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#veziBibliotecaOnAction" prefHeight="28.0" prefWidth="83.0" text="Vezi" />
+        <Button fx:id="veziFiltru" layoutX="470.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#veziFiltruOnAction" prefHeight="28.0" prefWidth="83.0" text="Vezi" />
+        <Button fx:id="cautaCarte" layoutX="470.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#veziCarteOnAction" prefHeight="28.0" prefWidth="83.0" text="Cauta carte" />
+        <Button fx:id="dAbonat" layoutX="34.0" layoutY="389.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#anulareButtonOnAction" text="Deautentificare" />
+        <Label fx:id="mAbonat" layoutX="17.0" layoutY="253.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="575.0" />
+        <Button fx:id="returnareCarte" layoutX="356.0" layoutY="217.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#returnareOnAction" prefHeight="28.0" prefWidth="103.0" text="Returnare carte" />
+        <Button fx:id="imprumutareCarte" layoutX="188.0" layoutY="217.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#imprumutareCarteOnAction" prefHeight="28.0" prefWidth="124.0" text="Imprumutare carte" />
+        <Button fx:id="pAbonat" layoutX="431.0" layoutY="369.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pAbonatOnAction" prefHeight="25.0" prefWidth="130.0" text="Peristenta abonat" />
+        <Button fx:id="pCarte" layoutX="243.0" layoutY="414.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#pCarteOnAction" prefHeight="25.0" prefWidth="124.0" text="Peristenta carte" />
+        <Label layoutX="29.0" layoutY="309.0" text="Alege domeniu statistica">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="statistici" layoutX="273.0" layoutY="310.0" prefHeight="25.0" prefWidth="167.0" />
+        <Button fx:id="grafic" layoutX="464.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#graph" prefHeight="25.0" prefWidth="96.0" text="Vezi grafic" />
+        <Button fx:id="rapoarte" layoutX="243.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Salvare rapoarte" />
+      <Button fx:id="pBibliotecar" layoutX="431.0" layoutY="414.0" mnemonicParsing="false" onAction="#pBibliotecarOnAction" text="Peristenta biblotecar" />
+    </children>
+</AnchorPane>
